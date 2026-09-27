@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0b1114" />
+    <title>水墨 · Ink in Water</title>
+  </head>
+  <body>
+    <canvas id="canvas" aria-label="Ink and water canvas. Drag to paint."></canvas>
+    <p id="hint"></p>
+    <div id="ui">
+      <button id="pause" type="button" aria-pressed="false">Pause</button>
+      <label class="lifetime">
+        <span>Ink lasts</span>
+        <input id="lifetime" type="range" min="0" max="9" step="1" />
+        <output id="lifetime-value"></output>
+      </label>
+      <button id="clear" type="button">Clear</button>
+      <button id="snapshot" type="button">Save PNG</button>
+    </div>
+    <div id="unsupported" hidden>
+      <h1>水墨</h1>
+      <p></p>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
